@@ -1,0 +1,210 @@
+/**
+ * @Author - João Fernandes
+ * @Updated - 25/11/2022
+ *
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+:root {
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Dark-desaturated-blue: hsl(236, 21%, 26%);
+    --Very-dark-blue: hsl(235, 16%, 14%);
+    --Very-dark: hsl(234, 17%, 12%);
+    --background: #231D2B;
+
+}
+
+.positions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.bg-hills {
+    flex-direction: column;
+    background-image: url("pinkmountains.png");
+
+    background-repeat: repeat-x;
+    background-position: bottom;
+    z-index: 999;
+}
+
+.title {
+    text-align: center;
+    color: #FFF;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    position: fixed;
+    top: 100px;
+    color: #FFF;
+}
+
+.quote {
+    text-align: center;
+    color: #FFF;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    position: fixed;
+    top: 150px;
+    color: #FFF;
+}
+
+.author {
+    text-align: center;
+    text-rendering: auto;
+    font-size: 10px;
+    color: #FFF;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    position: fixed;
+    top: 185px;
+    color: #FFF;
+}
+
+/*-------------------------------------------------------------------*/
+
+.time-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-timer {
+    text-align: center;
+    padding-right: 1%;
+    margin-right: 30px;
+}
+
+.card-timer:last-child {
+    margin-right: 0px;
+}
+
+.card div {
+    width: 130px;
+    height: 130px;
+    /*     width: auto;
+    height: auto;
+    padding: 1rem; */
+    margin-top: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: rgb(221, 143, 143);
+    font-size: 4.5rem;
+    font-weight: 250;
+
+    border: 0px none;
+    border-radius: 65px;
+    background: linear-gradient(to bottom, hsl(235, 16%, 14%), hsl(236, 21%, 26%) 51% 100%);
+}
+
+.card-timer small {
+    color: gray;
+    letter-spacing: 0.4em;
+    font-weight: 500;
+}
+
+/*-------------------------------------------------------------------*/
+
+.dmy-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-timer {
+    text-align: center;
+    padding-right: 1%;
+    margin-right: 30px;
+}
+
+.date-timer:last-child {
+    text-align: center;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.date div {
+    width: 70px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: rgb(221, 143, 143);
+    font-size: 1.5rem;
+    font-weight: 150;
+
+    margin-left: 15%;
+    margin-top: 25%;
+    border: 1px none;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, hsl(235, 16%, 14%), hsl(236, 21%, 26%) 51% 100%);
+}
+
+.date-timer small {
+    color: gray;
+    display: flex;
+    margin-left: 60%;
+    letter-spacing: 0.2em;
+    font-weight: 150;
+}
+
+/*-------------------------------------------------------------------*/
+
+.social-media {
+    margin-bottom: 20px
+}
+
+
+.social-media a {
+    width: 60px;
+    padding: 25px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.social-media i {
+    color: gray;
+    font-size: 1.85rem;
+    transition: all ease-in-out 0.15s;
+    justify-content: center;
+}
+
+.social-media i:hover {
+    color: rgb(221, 143, 143);
+}
+
+.attribution {
+    margin-bottom: 1px;
+    position: fixed;
+    bottom: 65px;
+
+    font-size: 15px;
+    text-align: center;
+    right: 41.5%;
+    color: #FFF;
+}
+
+.attribution a {
+    color: rgb(221, 143, 143);
+    text-decoration: none;
+    justify-content: center;
+
+}
